@@ -51,10 +51,18 @@ def setup_employee_roster(employee_roster=set()):
         have_new_employees = user_response_truth_false_handling(input("Do you have more employees to add? Type Y for yes and N for no "))
     
     return employee_roster
+
+# def write_employee_roster_file(employee_roster:set):
+#     '''
+#     Function: write_employee_roster_file
+#     Input: employee_roster set
+#     Return: 
+
+#     '''
         
 
 def main():
-    print(setup_employee_roster())
+    # So far, can create a new employee roster list from user inputs. 
 
 if __name__ == "__main__":
     main()
