@@ -34,6 +34,7 @@ def user_response_name_handling(user_response:str):
 
     return user_response
 
+
 def setup_employee_roster(employee_roster=set()):
     '''
     Function: setup_employee_roster
@@ -51,18 +52,24 @@ def setup_employee_roster(employee_roster=set()):
         have_new_employees = user_response_truth_false_handling(input("Do you have more employees to add? Type Y for yes and N for no "))
     
     return employee_roster
+# Basic: only creating list with names. Want to expand to set up Employee First Name, Last Name, Start Date, Department, Titele
 
-# def write_employee_roster_file(employee_roster:set):
-#     '''
-#     Function: write_employee_roster_file
-#     Input: employee_roster set
-#     Return: 
+def setup_employee_profile():
+    '''
+    Function: setup_employee_profile
+    Input: None
+    Return: Creates a list with an individual employee's information
+    '''
+    first_name = user_response_name_handling(input("What is the employee's first name?"))
+    last_name = user_response_name_handling(input("What is the employee's last name?"))
+    
 
-#     '''
+
         
 
 def main():
     # So far, can create a new employee roster list from user inputs. 
+    setup_employee_roster()
 
 if __name__ == "__main__":
     main()
