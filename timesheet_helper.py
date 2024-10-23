@@ -2,6 +2,18 @@
 Margaret Bertoni
 Module with functions to create a basic time sheet program
 '''
+def menu_select():
+    '''
+    Function: menu_select
+    Input: None
+    Return: Gets user input option
+    '''
+    question_text = "What would you like to do? Enter a letter \n"
+    menu_text = "A: Add a new employee \n R: Remove an employee \n I: Clock In \n O: Clock Out"
+    print(menu_text)
+    selection = input(question_text)
+    return user_response_name_handling(selection)
+
 def user_response_truth_false_handling(user_response:str):
     '''
     Function: user_response_truth_false_handling
